@@ -1,8 +1,19 @@
-# React + Vite
+# SPL20-SEARCH
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+a search that utilizes the Dexscreener API to fetch Solana token data and display it in a simple UI.
+simply paste the contract address of the spl20 token in the search bar and hit enter.
+the contract address for the token can be found on solscan.io under token address.
 
-Currently, two official plugins are available:
+many new spl20 tokens don't show their pricing within Solana wallets such as Phantom, and are also not recognized in aggregators such as Jupiter Aggregator.
+this can make it hard to track the price for these tokens, and often leads to users opening many tabs on Dexscreener and RaydiumSwap.
+this becomes especially tiresome when a user has many of these new spl20 tokens. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+spl20-search was created to help users track their holdings in one place, with a simple, uncluttered UI.
+only data most relevant to traders will be included, such as marketcap, liquidity, volume & a chart.
+
+coming soon:
+- dashboard where users can view their favourite tickers in one location
+- marketcap alerts; set a target and recieve an alert when it is reached
+- new token-pair feed
+- portfolio calculator
+
