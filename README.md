@@ -18,4 +18,5 @@ coming soon:
 - marketcap alerts; set a target and recieve an alert when it is reached
 - new token-pair feed
 - portfolio calculator
+- enhanced mobile support
 
