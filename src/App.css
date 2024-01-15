@@ -1,0 +1,343 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  overflow: hidden;
+
+}
+:root {
+  --page-width: 65em !important;
+}
+
+.container.container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header, .main-content, .footer {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 7vh;
+  width: 100%;
+  background-color: #25242A;
+  border-bottom: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header h1 {
+  color: #d37390;
+  margin: 0;
+  opacity: 85%;
+  height: 100%;
+  font-size: 0.95rem;
+  font-family: 'Press Start 2P', system-ui;
+}
+
+.main-content {
+  background-color: #121212;
+  flex-grow: 1;
+  justify-content: center;
+  opacity: 85%;
+
+}
+
+#search-container, #dash-container {
+  display: flex;
+  margin: 0 auto;
+  height: 75vh;
+  /*background-color: #25242A;*/
+  background-color: black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#search-info, #dash-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5vh;
+  margin: 0 auto;
+  background-color: #d37390;
+  opacity: 75%;
+}
+#dash-info {
+  border: 1px solid black;
+}
+
+#search-info:hover, #dash-info:hover {
+  opacity: 80%;
+}
+
+#search-info p, #dash-info p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.buttonPanel {
+  display: flex;
+  gap: 0.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main-content button {
+  margin: 1rem auto;
+  border-radius: 0;
+  opacity: 75%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 33%;
+
+}
+
+.main-content button:hover {
+  border: 1px solid #d37390;
+  opacity: 100%;
+}
+
+
+#search-container, #dash-container, #search-info, #dash-info {
+  width: 85%;
+}
+
+input.search, .searchForm {
+  height: 100%;
+  background-color: #d37390;
+
+}
+input.search {
+  padding-left: 1rem !important;
+  border: 1px solid black !important;
+}
+
+.search::placeholder {
+  color: black !important;
+  opacity: 80%;
+
+}
+
+
+.tokenContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  color: #d37390;
+
+}
+
+.tokenHeader {
+  height: max-content;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: left;
+  background-color: black;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.tokenHeader h1, p, h2 {
+  margin-bottom: 0.35rem !important;
+  width: max-content;
+}
+
+.tokenName {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  border: 1px solid #d37390;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  opacity: 100%;
+  background-color: #121212;
+
+}
+.tokenName:hover {
+  cursor: pointer;
+  opacity: 80%;
+  background-color: black;
+}
+
+.tokenDataContainer {
+  display: flex;
+}
+
+.alertContainer {
+  background-color: black;
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+
+.tokenData {
+  padding: 0 0 0 0.5rem;
+  font-size: 18px;
+  margin-top: 0;
+  font-family: 'Fira Code', monospace;
+  width: max-content;
+  transition: color 0.5s ease;
+}
+
+
+.tokenPrice {
+  margin-top: 1.5rem;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+}
+
+.tokenTicker {
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.tokenBody {
+    height: 70%;
+    width: 100%;
+    padding: 0.5rem 0.25rem 1.3rem 1.3rem;
+}
+
+
+.cyan {
+  color: #04BEBE;
+}
+
+.green {
+  color: #39b500
+}
+
+.red {
+  color: #DB0000;
+}
+
+.allVolume {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hrVolume {
+  width: max-content;
+}
+
+.tokenLink:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+.tokenLink:active {
+  opacity: 50%;
+}
+
+.tokenLinks {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  width: 100%;
+}
+.tokenLink {
+  padding: 0.25rem 0.35rem 0.4rem 0.35rem;
+  background-color: #d37390;
+  color: #121212;
+  opacity: 80%;
+  border-radius: 0.25rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.85rem;
+}
+
+.transactionBar {
+  display: flex;
+  flex-direction: column;
+  height: 1.25rem;
+  width: 100%;
+  opacity: 85%;
+
+}
+.buySection, .sellSection {
+  transition: width 1s ease;
+  height: 100%;
+}
+.buySection {
+  background-color: #39b500;
+}
+
+.sellSection {
+  background-color: #DB0000;
+}
+
+#dexscreener-embed, iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+iframe {
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 0;
+  border-radius: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+#solConversion {
+  font-size: 0.85rem;
+}
+#ca {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  #root {
+    font-size: 12px;
+  }
+  .header h1 {
+    margin-top: 0.3rem;
+    font-size: 14px;
+  }
+  .main-content button:active {
+    border: 1px solid #d37390;
+    opacity: 100%;
+  }
+  #search-container, #dash-container, #search-info, #dash-info, .buttonPanel {
+    width: 95%;
+  }
+  #search-container, #dash-container {
+    height: 78vh;
+  }
+}
+
+@keyframes fadeInFromBlack {
+  from {
+    color: black; /* Start with text color black */
+    opacity: 0;   /* Start fully transparent */
+  }
+  to {
+    color: inherit; /* Transition to the inherited text color */
+    opacity: 1;     /* Fully opaque */
+  }
+}
+
+
